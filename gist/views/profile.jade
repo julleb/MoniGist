@@ -1,0 +1,25 @@
+extends layout
+block content
+    .container
+        .four.columns#profileInfo 
+            h2 Profile
+            h4 #{rows[0].username}
+            br
+            h4 Gists
+            each row, index in rows
+                if row.public
+                    a(href='#{row.url}') Gist
+                    p 
+                        small #{age_array[index]} ago
+                    br
+                else if user
+                    if rows[0].username == user.username
+                        a(href='#{row.url}') Gist
+                        p 
+                            small #{age_array[index]} ago
+                        br
+                        
+        
+        .three.columns#profileInfo
+          a(href='#{rows[0].profile_url}')
+            img(src='#{rows[0].avatar_url}', style='width:200px;height:200px')  

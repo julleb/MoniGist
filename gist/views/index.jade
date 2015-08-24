@@ -1,0 +1,35 @@
+extends layout
+block content
+  .container
+    .three.columns#recent
+      h3 Recent gists
+      each row, index in rows
+        a(href='#{row.url}') Gist by #{row.username} 
+        h6 #{age_array[index]} ago
+        br
+    .ten.columns#textarea
+      form#send-textarea(method='post', action='new')
+        textarea(class='text' form='send-textarea', name='textarea')
+         | #include <iostream>
+         | int main() {
+         |    std::cout << "Hello, World!" << std::endl;
+         | }
+        button(class='send-btn' type='submit') Send
+        input(type='checkbox', name='privateCheckbox', value='isPrivate')
+        | Private
+        input(type='checkbox', name='compileCheckbox', value='compileTheCode')
+        | Compile the code (C++)
+    .three.columns#sidebar
+      .user_info
+        if user
+          h3 
+            a(href='/#{user.username}')  #{user.username}
+          a(href='#{user.profileUrl}')
+            img(src='#{user._json.avatar_url}')
+          br
+          a(class='button', href='/logout') Logout
+        else
+          h5 Login with your GitHub account if you want to save your gists.
+          br
+          a(class='button', href='/auth/github') Login with GitHub
+

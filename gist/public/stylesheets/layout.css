@@ -1,0 +1,81 @@
+/* Table of Content
+==================================================
+        #Site Styles
+        #Page Styles
+        #Media Queries
+        #Font-Face */
+
+/* #Site Styles
+================================================== */
+section#sidebar {
+    position: fixed;
+    text-align: left;
+}
+
+section#content {
+    float: right;
+}
+
+html, body {
+    color: #2e2e2e !important;
+    font-family: "Droid Sans",sans-serif;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Droid Serif",serif;
+}
+
+#content h3, h4 {
+    margin-top: 20px;
+}
+
+div.container {
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    padding-top: 50px;
+}
+
+footer {
+    float: right !important;
+    text-align: center;
+}
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}
+
+
+/* #Font-Face
+================================================== */
+
+
+@font-face {
+    font-family: "BLOKKRegular";
+    src: url("../fonts/BLOKKRegular.ttf");
+    font-family: "Anonymous Pro";
+    src: url("../fonts/Anonymous Pro.ttf");
+}
+
+
+
+.lorem {
+    font-family: 'BLOKKRegular';
+}

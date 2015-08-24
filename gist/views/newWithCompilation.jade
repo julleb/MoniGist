@@ -1,0 +1,17 @@
+extends layout
+block content
+  .container
+    .sixteen.columns
+        .eight.columns#gist
+            h4 Created by:
+                if rows[0].username === 'ANONYMOUS'
+                    a(href='') #{rows[0].username}
+                else
+                    a(href='/#{rows[0].username}')  #{rows[0].username}
+            h6 #{time} ago
+            textarea(id="gistArea" readonly="readonly" rows='30' cols='100')
+                | #{rows[0].text}
+        .seven.columns.half-top
+            h4 Output 
+            textarea(id="outputArea" readonly="readonly" rows='30' cols='100')
+                | #{rows[0].output}

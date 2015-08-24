@@ -1,0 +1,115 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    /*
+    background: #242424;
+    */
+    background: white;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.debug table {
+    border: 2px solid black;
+}
+
+.debug th {
+    border: 4px solid black;
+}
+
+.debug td {
+    border: 2px solid black;
+}
+
+.debug {
+
+}
+
+.user_info {
+   
+    
+}
+
+.user_info h5{
+    color: #3A523A;
+}
+
+
+/* Div with id name textarea */
+#textarea {
+    display:inline-block;
+    position:relative;
+}
+
+/* Button inside the div */
+button.send-btn {
+    position:relative;
+    bottom: 2px;
+    left: 2px;
+}
+
+/* The actual text area square */
+.text {
+    height: 500px;
+    width: 600px;
+    
+}
+
+/* Image tags inside sidebar and inside user_info div */
+#sidebar .user_info img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+}
+#sidebar {
+    
+}
+#recent{
+   
+    
+}
+
+#outputArea {
+    width: 702px;
+    height: 523px;
+}
+
+#gistArea {
+    width: 702px;
+    height: 523px;
+}
+
+.remove-top { margin-top: 0 !important; }
+.half-top { margin-top: 21px !important; }
+.add-top { margin-top: 50px !important; }
+.add-top-mini { margin-top: 10px !important; }
+.remove-bottom { margin-bottom: 0 !important; }
+.half-bottom { margin-bottom: 10px !important; }
+.add-bottom { margin-bottom: 25px !important; }
+
+
+
+
+/*css for the header*/
+#header {
+    text-align: center;
+    background-image: url(moni.jpg);
+    height:800px;
+    height: 100px;
+	background-repeat: no-repeat;
+    
+    background-position: center; 
+}
+#header a {
+    text-decoration:none;
+    color: black;
+}
+#header a:hover {
+    color:black;
+}
+#header a:visited {
+    color:black;
+}
+
